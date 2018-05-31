@@ -1,0 +1,67 @@
+@import "bootstrap";
+
+#logo{
+	
+	letter-spacing: -1px;
+	font-weight: bold;
+	float: left;
+	color: #fff;
+	font-weight: 1.7em;
+}
+
+#logo:hover{
+	color: red;
+	text-decoration: none;
+}
+
+#nav-art {
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+
+#nav-art:hover {
+	color: red;
+}
+
+.middle {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: asset-url('main.jpg');
+	background-size: cover;
+	height: 580px;
+}
+
+.jumbotron h1 {
+	color: #fff;
+	margin-top: 10px;
+	font-size: 60px;
+}
+
+footer {
+	margin-top: 45px;
+	color: #777;
+	padding-top: 5px;
+	border-top: 1.2px solid #eaeaea;
+}
+
+footer a:hover {
+	color: black;
+}
+
+footer small{
+	float: left;
+}
+
+footer ul {
+	float: right;
+	list-style: none;
+}
+
+footer ul li {
+	float: left;
+	margin-left: 15px;
+}
