@@ -1,13 +1,29 @@
 
 <% if @article.errors.any? %>
-<h2> Fill the Blanks to avoid errors. Do not leave the blanks empty. </h2>
-	<ul>
-		<% @article.errors.full_messages.each do |msg| %>
-	<li>
-		<%= msg %>		
-	</li>	
-		<% end %>
-	</ul>
+
+ <div class="row">
+ 	<div class="col-xs-4 offset-md-2">
+ 		<div class="card style="width: 20rem";>
+ 			<div class="card-body">
+ 				<h6 class="card-title ">
+ 					<%= pluralize(@article.errors.count, "error") %>
+ 					Prohibited this article from being saved:
+ 				<h2>
+ 					<div class="card-body">
+ 						<ul>
+ 							<% @article.errors.full_messages.each do |msg| %>
+								<li>
+									<%= msg %>		
+								</li>	
+									<% end %>
+ 						</ul>
+ 					</div>
+ 				</h2>
+ 				</h5>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
 <% end %>
 
 <div class="row">
